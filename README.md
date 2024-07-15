@@ -24,3 +24,7 @@ Contains all the necessary functions and Classes used to run `execute.py`.
 
 This is the file that simulates the task of performance evaluation for both the algos evaluated on the same sample path. Here sample path refers to the users affected and their respective flags for each news. `execute.py` at every time step generates news items from 2 randomly selected nodes in the graph and the labels for these news are given by the source reliabilities of the nodes, known to the network. At every time step each algo selects the news items to be queryied and we run evaluate the algorithm for a default value of 10 time-steps running over a 100 itterations for comparing the performance.
 
+## Binary Tree.ipynb
+
+`Binary Tree.ipynb` is a standalone Jupyter Notebook file dedicated to evaluating the performance of the algorithms on binary trees.
+
