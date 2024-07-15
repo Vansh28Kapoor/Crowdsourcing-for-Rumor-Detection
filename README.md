@@ -8,3 +8,10 @@ However, each verification incurs a cost.
 
 An algorithm must select which news items to query the Oracle at each time step from a vast pool of news, aiming to minimize the total cost incurred during querying while potentially allowing some fake news to spread to users. 
 An efficient algorithm must utilize both the crowd signals and the network structure to decide which set of news items to query at each time step.
+# Code Usage Guide
+## Classes.py
+Contains all the necessary functions and Classes used to run `execute.py`.
+## graph.py
+`graph.py` contains the functions used to simulate graphs such as Watts-Strogatz Graph and Zachary’s Karate Club Graph.
+## execute.py
+
