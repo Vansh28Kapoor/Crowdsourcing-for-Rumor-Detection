@@ -28,7 +28,7 @@ This is the file that simulates the task of performance evaluation for both the 
 
 - `beta`: Represents the source unreliability.
 - `gamma`: Cost of querying relative to the cost of a user being affected by fake news.
-- `rel`: List of flagging accuracies of users in the network where each element is a list of $\theta_{u, f}$ and $\theta_{u, \bar{f}}$.
+- `rel`: List of flagging accuracies of users in the network where each element is a list of $\theta_{u, f}$ and $\theta_{u, \overline{f}}$.
 - `u1`: Utility of the Opt Algorithm (algorithm that knows the true label of news and decides whether to query as soon as news generated) as a function of the number of steps, averaged over all iterations.
 - `u_2`, `u_4`: Utilities of the One-step Look Ahead Algorithm and the Greedy Algorithm, respectively, as functions of the number of steps, averaged over all iterations.
 
