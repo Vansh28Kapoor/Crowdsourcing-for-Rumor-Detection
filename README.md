@@ -22,7 +22,16 @@ Contains all the necessary functions and Classes used to run `execute.py`.
 
 ## execute.py
 
-This is the file that simulates the task of performance evaluation for both the algos evaluated on the same sample path. Here sample path refers to the users affected and their respective flags for each news. `execute.py` at every time step generates news items from 2 randomly selected nodes in the graph and the labels for these news are given by the source reliabilities of the nodes, known to the network. At every time step each algo selects the news items to be queryied and we run evaluate the algorithm for a default value of 10 time-steps running over a 100 itterations for comparing the performance.
+This is the file that simulates the task of performance evaluation for both the algos evaluated on the same sample path. Here sample path refers to the users affected and their respective flags for each news. `execute.py` at every time step generates news items from 2 randomly selected nodes in the graph and the labels for these news are given by the source reliabilities of the nodes, known to the network. At every time step each algo selects the news items to be queryied and we run evaluate the algorithm for a default value of 10 time-steps running over a 100 itterations for comparing the performance. `execute.py` operates on a constant weighted Watts-Strogatz Graph. The parameters include the number of nodes, number of nearest neighbors, rewiring probability, and weight of each link.
+
+## Parameters
+
+- `beta`: Represents the source unreliability.
+- `gamma`: Cost of querying relative to the cost of a user being affected by fake news.
+- `rel`: List of flagging accuracies of users in the network.
+- `u1`: Utility of the Opt Algorithm (algorithm that knows the true label of news and decides whether to query as soon as news generated) as a function of the number of steps, averaged over all iterations.
+- `u_2`, `u_4`: Utilities of the One-step Look Ahead Algorithm and the Greedy Algorithm, respectively, as functions of the number of steps, averaged over all iterations.
+
 
 ## Binary Tree.ipynb
 
